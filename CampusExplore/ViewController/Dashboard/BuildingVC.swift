@@ -66,10 +66,10 @@ extension BuildingVC: UITableViewDelegate, UITableViewDataSource {
         let isFavourite = UserDefaultsManager.shared.getFavorites(title: campus.name)
         if(isFavourite ) {
             cell.heart.setImage(UIImage(systemName:"heart.fill"), for: .normal)
-            AudioServicesPlaySystemSound(1109)
+            //AudioServicesPlaySystemSound(1109)
         }else {
             cell.heart.setImage(UIImage(systemName:"heart"), for: .normal)
-            AudioServicesPlaySystemSound(1152)
+           // AudioServicesPlaySystemSound(1152)
         }
         
      

@@ -32,7 +32,7 @@ class LoginVC: UITableViewController {
             }
         
         
-            if(email.text == "admin" && password.text == "admin") {
+            if(email.text == "admin@nwmissouri.edu" && password.text == "admin123") {
                
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "AdminHomeVC")
                 self.navigationController?.pushViewController(vc!, animated: true)
