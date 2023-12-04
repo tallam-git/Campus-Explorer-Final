@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommonSliderCell" rowHeight="500" id="KGk-i7-Jjw" customClass="CommonSliderCell" customModule="CampusExplore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="574" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="574" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rZx-SY-zF7">
+                        <rect key="frame" x="10" y="10" width="554" height="480"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-mN-Cpm">
+                                <rect key="frame" x="10" y="10" width="554" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-AB-ik6" customClass="ImageSlideshow" customModule="CampusExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="554" height="400"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="RCu-uD-acA"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-Oh-uGx">
+                                        <rect key="frame" x="0.0" y="400" width="554" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cYV-mN-Cpm" secondAttribute="trailing" constant="10" id="Hr4-No-FHU"/>
+                            <constraint firstItem="cYV-mN-Cpm" firstAttribute="top" secondItem="rZx-SY-zF7" secondAttribute="top" constant="10" id="i82-bx-bZN"/>
+                            <constraint firstItem="cYV-mN-Cpm" firstAttribute="leading" secondItem="rZx-SY-zF7" secondAttribute="leading" constant="10" id="qhk-k3-tPn"/>
+                            <constraint firstAttribute="bottom" secondItem="cYV-mN-Cpm" secondAttribute="bottom" constant="10" id="rce-JU-X40"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rZx-SY-zF7" secondAttribute="trailing" constant="10" id="C9H-JN-JJy"/>
+                    <constraint firstItem="rZx-SY-zF7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PDL-zx-FQK"/>
+                    <constraint firstAttribute="bottom" secondItem="rZx-SY-zF7" secondAttribute="bottom" constant="10" id="h19-4Z-Gpc"/>
+                    <constraint firstItem="rZx-SY-zF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="upj-7s-nHo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="des" destination="f8Z-Oh-uGx" id="H1Q-DU-vmI"/>
+                <outlet property="imageSlideShow" destination="XfC-AB-ik6" id="IKq-VJ-ACc"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

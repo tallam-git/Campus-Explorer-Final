@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommonCell" rowHeight="157" id="KGk-i7-Jjw" customClass="CommonCell" customModule="CampusExplore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xa-pp-Qta" customClass="DesignableView" customModule="CampusExplore" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="435" height="147"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Hall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9c-Ge-MsO">
+                                <rect key="frame" x="145" y="63.333333333333321" width="230" height="20.666666666666664"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="18"/>
+                                <color key="textColor" red="0.19607841970000001" green="0.094117648900000003" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-7f-8y2">
+                                <rect key="frame" x="10" y="13.666666666666671" width="120" height="120.00000000000001"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1da-Tz-Klf"/>
+                                    <constraint firstAttribute="height" constant="120" id="YhH-W4-R2r"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DW0-WA-J28">
+                                <rect key="frame" x="400" y="56.666666666666657" width="25" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="0K4-Xm-hjO"/>
+                                    <constraint firstAttribute="height" constant="34.000000000000014" id="hJ6-aL-780"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g9c-Ge-MsO" firstAttribute="leading" secondItem="Rlz-7f-8y2" secondAttribute="trailing" constant="15" id="9O0-KP-klJ"/>
+                            <constraint firstAttribute="trailing" secondItem="DW0-WA-J28" secondAttribute="trailing" constant="10" id="Egs-tb-wf0"/>
+                            <constraint firstItem="DW0-WA-J28" firstAttribute="centerY" secondItem="g9c-Ge-MsO" secondAttribute="centerY" id="HVd-I5-Jvm"/>
+                            <constraint firstItem="g9c-Ge-MsO" firstAttribute="centerY" secondItem="Rlz-7f-8y2" secondAttribute="centerY" id="aYa-OH-ui1"/>
+                            <constraint firstAttribute="trailing" secondItem="g9c-Ge-MsO" secondAttribute="trailing" constant="60" id="cy6-aM-t8t"/>
+                            <constraint firstItem="Rlz-7f-8y2" firstAttribute="centerY" secondItem="2xa-pp-Qta" secondAttribute="centerY" id="nt6-yD-Hjb"/>
+                            <constraint firstItem="Rlz-7f-8y2" firstAttribute="leading" secondItem="2xa-pp-Qta" secondAttribute="leading" constant="10" id="xqT-Og-JRN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2xa-pp-Qta" secondAttribute="trailing" constant="5" id="E99-Ql-AhS"/>
+                    <constraint firstItem="2xa-pp-Qta" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Jw0-5U-2ue"/>
+                    <constraint firstAttribute="bottom" secondItem="2xa-pp-Qta" secondAttribute="bottom" constant="5" id="ge8-oI-849"/>
+                    <constraint firstItem="2xa-pp-Qta" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zeg-RB-naq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commonImage" destination="Rlz-7f-8y2" id="Wmo-C0-6Ho"/>
+                <outlet property="commonTitle" destination="g9c-Ge-MsO" id="Ujr-h9-Xik"/>
+                <outlet property="heart" destination="DW0-WA-J28" id="ske-mA-GCv"/>
+            </connections>
+            <point key="canvasLocation" x="164.12213740458014" y="59.507042253521128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
