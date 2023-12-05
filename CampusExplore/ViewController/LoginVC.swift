@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseFirestore
+import AVKit
 
 class LoginVC: UITableViewController {
     @IBOutlet weak var email: UITextField!
@@ -23,11 +24,13 @@ class LoginVC: UITableViewController {
         
             if(email.text!.isEmpty) {
                 showAlerOnTop(message: "Please enter your email.")
+                AudioServicesPlaySystemSound(1114)
                 return
             }
 
             if(self.password.text!.isEmpty) {
                 showAlerOnTop(message: "Please enter your password.")
+                AudioServicesPlaySystemSound(1114)
                 return
             }
         

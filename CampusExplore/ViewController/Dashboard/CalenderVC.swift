@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class CalenderVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -86,6 +87,7 @@ extension CalenderVC: UITableViewDelegate, UITableViewDataSource {
          FireStoreManager.shared.deleteEvent(eventName: listData.eventName, date: listData.date) { success in
              if success {
                  showAlerOnTop(message: "Event deleted successfully")
+                 AudioServicesPlaySystemSound(1112)
              }
          }
          tableView.deleteRows(at: [indexPath], with: .fade)

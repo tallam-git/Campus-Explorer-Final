@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class FullImageVC: UIViewController {
 
@@ -38,6 +39,7 @@ class FullImageVC: UIViewController {
         FireStoreManager.shared.deleteImageUrlFromFirestore(imageUrlToDelete: imageUrl) { success in
             if success{
                 showAlerOnTop(message: "Deleted successfully")
+                AudioServicesPlaySystemSound(1112)
                 self.navigationController?.popViewController(animated: true)
             }
         }

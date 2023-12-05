@@ -76,8 +76,10 @@ extension BuildingVC: UITableViewDelegate, UITableViewDataSource {
         cell.heart.onTap {
             if  UserDefaultsManager.shared.getFavorites(title: campus.name) {
                 UserDefaultsManager.shared.removeFavorite(title: campus.name)
+                AudioServicesPlaySystemSound(1109)
             } else {
                 UserDefaultsManager.shared.saveFavourite(title: campus.name)
+                AudioServicesPlaySystemSound(1152)
             }
             self.tableView.reloadData()
             
