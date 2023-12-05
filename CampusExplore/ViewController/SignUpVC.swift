@@ -7,6 +7,7 @@
 
 
 import UIKit
+import AVKit
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var name: UITextField!
@@ -32,21 +33,25 @@ class SignUpVC: UIViewController {
         
         if(self.email.text!.isEmpty) {
             showAlerOnTop(message: "Please enter email.")
+            AudioServicesPlaySystemSound(1053)
             return false
         }
         
         if !email.text!.emailIsCorrect() {
             showAlerOnTop(message: "Please enter valid email id")
+            AudioServicesPlaySystemSound(1053)
             return false
         }
         
         if(self.name.text!.isEmpty) {
             showAlerOnTop(message: "Please enter full name.")
+            AudioServicesPlaySystemSound(1053)
             return false
         }
     
         if(self.password.text!.isEmpty) {
             showAlerOnTop(message: "Please enter password.")
+            AudioServicesPlaySystemSound(1053)
             return false
         }
         
